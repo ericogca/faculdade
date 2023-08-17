@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-
-  #contador {
-    color: red;
-    font-size: 48px;
-  }
-</style>
-</head>
   <title>QUANTO TEMPO FALTA PRA ACABAR A AULA DER FT</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: white;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #contador {
+      color: red;
+      font-size: 48px;
+    }
+  </style>
+</head>
 <body>
-    <title>QUANTO TEMPO FALTA PRA ACABAR A AULA DER FT</title>
+  <h1>QUANTO TEMPO FALTA PRA ACABAR A AULA DER FT</h1>
   <div id="contador"></div>
 
   <script>
-    // Define a data alvo (19:00)
     const dataAlvo = new Date();
     dataAlvo.setHours(19, 0, 0);
 
-    // Atualiza o contador a cada segundo
     const contadorElement = document.getElementById("contador");
     const interval = setInterval(() => {
       const agora = new Date().getTime();
